@@ -1,15 +1,13 @@
 'use strict';
 
+const restart = document.querySelector('.restart-btn');
 const input = document.querySelector('.input-number');
 const guessCount = document.querySelector('.guess-count');
 const guess = document.querySelector('.guess-btn');
 const message = document.querySelector('.message');
 
-//  function randomNumber() {
-//   return Math.floor(Math.random() * 50);
-// }
-
 let random = Math.floor(Math.random() * 50);
+
 let guesses = 0;
 guessCount.innerText = `Guess: ${guesses}`;
 
