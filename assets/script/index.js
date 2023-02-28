@@ -1,5 +1,6 @@
 'use strict';
 
+// restart button still needs to be worked on!
 const restart = document.querySelector('.restart-btn');
 const input = document.querySelector('.input-number');
 const guessCount = document.querySelector('.guess-count');
