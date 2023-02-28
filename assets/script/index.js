@@ -12,17 +12,25 @@ let random = Math.floor(Math.random() * 50);
 let guesses = 0;
 guessCount.innerText = `Guess: ${guesses}`;
 
+function isNumber(num) {
+  if (num.length >= 0 && !isNaN(num)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 input.addEventListener('keypress', function(e) {
   if (e.key === 'Enter') {
     let number = input.value;
   
-    if (number == random) {
+    if (isNumber(number) === random) {
       message.innerText = 'Congratulations! You guessed the right number.'
     }
-    if (number > random) {
+    if (isNumber(number) > random) {
       message.innerText = 'The number is lower';
     }
-    if (number < random) {
+    if (isNumber(number) < random) {
       message.innerText = 'The number is higher';
     }
     guesses++;
