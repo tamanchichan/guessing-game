@@ -27,10 +27,6 @@ main .centre {
   place-items: center;
 }
 
-main .flex {
-  display: flex;
-}
-
 main .guess-count {
   color: #fff;
   font-size: 24px;
@@ -41,7 +37,7 @@ main .guess-count {
   width: 150px;
 }
 
-main form input[type=text] {
+main input[type=text] {
   border-radius: 100%;
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
   color: var(--main-form-input-color);
@@ -51,13 +47,12 @@ main form input[type=text] {
   width: 150px;
 }
 
-main form input[type=button] {
+main input[type=button] {
   border-radius: 10px;
   display: block;
   font-size: 24px;
   height: 30px;
   margin-top: 10px;
-  width: 150px;
 }
 
 main .message {
